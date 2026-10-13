@@ -1,0 +1,24 @@
+:root{--bg:#f5f6f8;--card:#fff;--text:#1f2933;--sub:#667085;--accent:#1d4e89;--at:#fff;--line:#d9dee5;--cta:#d9480f}
+@media (prefers-color-scheme:dark){:root{--bg:#10161d;--card:#18212b;--text:#eef2f6;--sub:#9aa7b5;--accent:#6aa7e8;--at:#0b1118;--line:#2a3745;--cta:#ff8a4c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.85}
+header{background:var(--accent);color:var(--at);padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center}
+header a{color:var(--at);text-decoration:none}
+.logo{font-weight:800;font-size:18px}
+nav{display:flex;gap:14px;font-size:14px}
+main{max-width:680px;margin:0 auto;padding:16px}
+h1{font-size:22px;line-height:1.4}
+h2{font-size:18px;border-left:5px solid var(--accent);padding-left:10px;margin-top:28px}
+a{color:var(--accent)}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0;text-decoration:none;color:var(--text)}
+.card b{display:block;color:var(--accent)}
+.card span{font-size:14px;color:var(--sub)}
+.box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--cta);border-radius:10px;padding:12px 14px;margin:16px 0}
+.pr{display:inline-block;font-size:12px;border:1px solid var(--sub);color:var(--sub);border-radius:4px;padding:0 6px;margin-right:6px}
+.cta{display:block;text-align:center;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:14px;margin:14px 0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px;text-align:center;white-space:nowrap}
+th{background:var(--accent);color:var(--at)}
+.note{font-size:13px;color:var(--sub)}
+footer{max-width:680px;margin:0 auto;padding:16px 16px calc(24px + env(safe-area-inset-bottom,0px));font-size:13px;color:var(--sub);text-align:center}
