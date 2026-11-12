@@ -1,27 +1,89 @@
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>古い車ステーション｜古い車の乗り方・手放し方ガイド</title><meta name="description" content="古い車の整備・部品交換から、買取・廃車まで。10年落ち・過走行の車の悩みを、やさしくまとめた車の情報ステーションです。"><link rel="stylesheet" href="style.css"></head>
-<body><header><a class="logo" href="index.html">🚗 古い車ステーション</a><nav><a href="compare/index.html">業者比較</a><a href="guides/index.html">ガイド</a></nav></header>
-<main><h1>古い車の乗り方も、手放し方も、やさしく</h1>
-<p>「古い車をまだ乗り続けたい」「売れないのでは」「廃車にするしかない？」という悩みに、手順と注意点をまとめています。</p>
-<h2>乗り続けたい方へ</h2>
-<a class="card" href="guides/headlight-kurai.html"><b>ヘッドライトが暗い？原因と明るくする方法</b>掃除・バルブ交換・LED化の注意点</a>
-<a class="card" href="guides/hid-to-led.html"><b>HIDからLEDに交換するメリット・デメリット</b>車検・光軸・適合の確認ポイント</a>
-<a class="card" href="guides/fog-led.html"><b>フォグランプをLEDに交換するときの注意点</b>色・車検・適合の確認ポイント</a>
-<h2>乗り換えを考えている方へ</h2>
-<a class="card" href="guides/subscription-kuruma.html"><b>古い車からサブスクに乗り換えるのはあり？</b>メリット・デメリットと、契約前に確認すること</a>
-<a class="card" href="guides/lease-hikaku.html"><b>車のサブスク・カーリースの選び方</b>ニコノリとオリコで乗ーるを比べる</a>
-<h2>手放したい方へ</h2>
-<a class="card" href="guides/uru-mae-junbi.html"><b>古い車を売る前の準備</b>掃除・書類・やらなくていいこと</a>
-<a class="card" href="guides/bike-kaitori.html"><b>大型バイク・古いバイクは売れる？</b>売る前の準備と、排気量で変わる手続き</a>
-<a class="card" href="compare/index.html"><b>買取業者の比較表</b>古い車への対応・手数料・エリアを比べる</a>
-<a class="card" href="guides/10nen-10man.html"><b>10年落ち・10万km超えでも売れる？</b>値段がつく条件と、売る前の準備</a>
-<a class="card" href="guides/haisha-kaitori.html"><b>廃車と買取、どちらが得？</b>還付金と手数料の考え方</a>
-<a class="card" href="guides/loan-zangai.html"><b>ローンが残っている車は売れる？</b>所有権と残債の確認ポイント</a>
-<a class="card" href="guides/fudosha.html"><b>不動車（動かない車）は売れる？</b>値段がつく理由と、業者に聞くこと</a>
-<a class="card" href="guides/shaken-gire.html"><b>車検切れの車は売れる？</b>運び方と、仮ナンバー・積載車の違い</a>
-<a class="card" href="guides/jiko-suibotsu.html"><b>事故車・水没車は売れる？</b>修復歴の違いと、売る前の注意点</a>
-<a class="card" href="guides/haisha-tetsuzuki.html"><b>廃車手続きの流れと費用</b>永久抹消と一時抹消の違い</a>
-<a class="card" href="guides/kanpukin.html"><b>廃車で戻るお金</b>自動車税・重量税・自賠責の還付</a>
-<a class="card" href="guides/hitsuyo-shorui.html"><b>車を売るときの必要書類</b>普通車と軽自動車のチェックリスト</a>
-<a class="card" href="guides/gyosha-erabi.html"><b>古い車の売り先の選び方</b>ディーラー・買取店・廃車業者の違い</a></main>
-<footer>当サイトは広告（アフィリエイト）を含みます。<br><a href="info.html">運営者情報・プライバシー・免責事項</a><br>© 2026 古い車ステーション</footer></body></html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>古い車の乗り方も、手放し方も、やさしく｜古い車ステーション</title>
+<meta name="description" content="古い車をまだ乗り続けたい・売りたい・廃車にしたい人のための手順と注意点をまとめています。">
+<style>
+:root{--navy:#1f3a5f;--navy-light:#2e527f;--accent:#e8a33d;--bg:#f7f8fa;--text:#2c2c2c;--muted:#6b7280;--card:#fff;--line:#e3e6ea;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;}
+header{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:14px 20px;box-shadow:0 2px 8px rgba(0,0,0,.08);flex-wrap:wrap;gap:8px;}
+.logo{color:#fff;font-weight:700;font-size:17px;text-decoration:none;}
+nav{display:flex;gap:18px;}
+nav a{color:#dfe6ef;text-decoration:none;font-size:14px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+nav a:hover{color:#fff;border-bottom-color:var(--accent);}
+main{max-width:960px;margin:0 auto;padding:32px 20px 64px;}
+h1{font-size:26px;color:var(--navy);margin-bottom:8px;}
+h1::after{content:"";display:block;width:48px;height:3px;background:var(--accent);margin-top:10px;border-radius:2px;}
+.lead{font-size:14px;color:var(--muted);margin:16px 0 28px;}
+.branches{display:grid;grid-template-columns:1fr;gap:14px;margin:28px 0 40px;}
+@media(min-width:640px){.branches{grid-template-columns:repeat(3,1fr);}}
+.branch{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 18px;text-decoration:none;color:var(--text);transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+.branch:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(31,58,95,.12);border-color:var(--navy-light);}
+.branch .icon{font-size:26px;display:block;margin-bottom:8px;}
+.branch b{display:block;color:var(--navy);font-size:15px;margin-bottom:4px;}
+.branch span{font-size:13px;color:var(--muted);}
+h2{font-size:18px;color:var(--navy);margin:36px 0 14px;padding-left:12px;border-left:4px solid var(--accent);}
+.cards{display:grid;grid-template-columns:1fr;gap:12px;}
+@media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr);}}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;text-decoration:none;color:var(--text);transition:.2s;}
+.card:hover{border-color:var(--navy-light);box-shadow:0 4px 12px rgba(31,58,95,.1);}
+.card b{display:block;color:var(--navy);font-size:15px;margin-bottom:4px;}
+.card span{font-size:13px;color:var(--muted);display:block;}
+footer{background:var(--navy);color:#c9d4e2;text-align:center;padding:24px 20px;font-size:12px;line-height:1.9;}
+footer a{color:#dfe6ef;text-decoration:underline;}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">🚗 古い車ステーション</a>
+  <nav>
+    <a href="compare/index.html">業者比較</a>
+    <a href="guides/index.html">ガイド</a>
+  </nav>
+</header>
+<main>
+  <h1>古い車の乗り方も、手放し方も、やさしく</h1>
+  <p class="lead">「古い車をまだ乗り続けたい」「売れないのでは」「廃車にするしかない？」という悩みに、手順と注意点をまとめています。</p>
+
+  <div class="branches">
+    <a class="branch" href="guides/index.html#noru"><span class="icon">🔧</span><b>まだ乗り続けたい</b><span>ヘッドライト・LED化などの整備</span></a>
+    <a class="branch" href="guides/index.html#norikae"><span class="icon">🚙</span><b>乗り換えを考えている</b><span>サブスク・カーリースの選び方</span></a>
+    <a class="branch" href="guides/index.html#tebanasu"><span class="icon">📄</span><b>そろそろ手放したい</b><span>売却・廃車・必要書類</span></a>
+  </div>
+
+  <h2>乗り続けたい方へ</h2>
+  <div class="cards">
+    <a class="card" href="guides/headlight-kurai.html"><b>ヘッドライトが暗い？原因と明るくする方法</b><span>掃除・バルブ交換・LED化の注意点</span></a>
+    <a class="card" href="guides/hid-to-led.html"><b>HIDからLEDに交換するメリット・デメリット</b><span>車検・光軸・適合の確認ポイント</span></a>
+    <a class="card" href="guides/fog-led.html"><b>フォグランプをLEDに交換するときの注意点</b><span>色・車検・適合の確認ポイント</span></a>
+  </div>
+
+  <h2>乗り換えを考えている方へ</h2>
+  <div class="cards">
+    <a class="card" href="guides/subscription-kuruma.html"><b>古い車からサブスクに乗り換えるのはあり？</b><span>メリット・デメリットと、契約前に確認すること</span></a>
+    <a class="card" href="guides/lease-hikaku.html"><b>車のサブスク・カーリースの選び方</b><span>ニコノリとオリコで乗ーるを比べる</span></a>
+  </div>
+
+  <h2>手放したい方へ</h2>
+  <div class="cards">
+    <a class="card" href="compare/index.html"><b>買取業者の比較表</b><span>古い車への対応・手数料・エリアを比べる</span></a>
+    <a class="card" href="guides/10nen-10man.html"><b>10年落ち・10万km超えでも売れる？</b><span>値段がつく条件と、売る前の準備</span></a>
+    <a class="card" href="guides/haisha-kaitori.html"><b>廃車と買取、どちらが得？</b><span>還付金と手数料の考え方</span></a>
+    <a class="card" href="guides/fudosha.html"><b>不動車（動かない車）は売れる？</b><span>値段がつく理由と、業者に聞くこと</span></a>
+    <a class="card" href="guides/shaken-gire.html"><b>車検切れの車は売れる？</b><span>運び方と、仮ナンバー・積載車の違い</span></a>
+    <a class="card" href="guides/haisha-tetsuzuki.html"><b>廃車手続きの流れと費用</b><span>永久抹消と一時抹消の違い</span></a>
+    <a class="card" href="guides/kanpukin.html"><b>廃車で戻るお金</b><span>自動車税・重量税・自賠責の還付</span></a>
+    <a class="card" href="guides/hitsuyo-shorui.html"><b>車を売るときの必要書類</b><span>普通車と軽自動車のチェックリスト</span></a>
+    <a class="card" href="guides/gyosha-erabi.html"><b>古い車の売り先の選び方</b><span>ディーラー・買取店・廃車業者の違い</span></a>
+  </div>
+</main>
+<footer>
+  当サイトは広告（アフィリエイト）を含みます。<br>
+  <a href="info.html">運営者情報・プライバシー・免責事項</a><br>
+  © 2026 古い車ステーション
+</footer>
+</body>
+</html>
